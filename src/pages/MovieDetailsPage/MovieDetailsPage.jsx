@@ -22,7 +22,9 @@ const MovieDetailsPage = () => {
 
   const { title, poster_path, overview, genres, runtime, budget, revenue } =
     movie;
-  const posterUrl = `https://image.tmdb.org/t/p/w500${poster_path}`;
+  const posterUrl = poster_path
+    ? `https://image.tmdb.org/t/p/w500${poster_path}`
+    : 'https://picsum.photos/id/38/200/300';
   const genresList = genres.map(genre => (
     <span key={genre.id} className={styles.genre}>
       {genre.name}

@@ -12,7 +12,7 @@ const MovieCard = ({ movie }) => {
       <img
         src={
           posterUrl === 'https://image.tmdb.org/t/p/w500null'
-            ? 'https://picsum.photos/id/26/200/300'
+            ? 'https://picsum.photos/id/38/200/300'
             : posterUrl
         }
         alt={title}
